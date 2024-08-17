@@ -193,14 +193,9 @@ window.onload = function() {
         map.setMaxBounds(bounds);
         map.fitBounds(bounds); // Ensure the map fits the image bounds
     
-        // Calculate 20% zoom level
-        const zoomRange = map.getMaxZoom() - map.getMinZoom();
-        const targetZoom = map.getMinZoom() + 0.2 * zoomRange;
-
-        // Set the zoom level to 20%
-        map.setZoom(targetZoom);
-    }
-rgetZoom = map.getMinZoom() + 0.2 * zoomRange;
+       // Calculate 20% zoom level
+       const zoomRange = map.getMaxZoom() - map.getMinZoom();
+       const targetZoom = map.getMinZoom() + 0.2 * zoomRange;
 
       // Set the zoom level to 20%
       map.setZoom(targetZoom);
@@ -298,7 +293,7 @@ rgetZoom = map.getMinZoom() + 0.2 * zoomRange;
 
     // Submit results to the web app (Google Apps Script)
     function submitResultsToWebApp(textData) {
-        fetch('https://script.google.com/macros/s/AKfycbz_oxrwoyDMZCk7tLvLFGBjd8l-x7_zL3cpWyncpw1vgduWrhmR_7uZ8VsCNyj11fzwEg/exec', { // Replace with your Google Apps Script web app URL
+        fetch('https://script.google.com/macros/s/AKfycbwRsSUWExGFLGF5X1NF9_EqwF61jYiAERqfapl-7H0I8L7Qo4glcAnuxxwAYe5uMG8BOg/exec', { // Replace with your Google Apps Script web app URL
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
