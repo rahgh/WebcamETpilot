@@ -193,9 +193,14 @@ window.onload = function() {
         map.setMaxBounds(bounds);
         map.fitBounds(bounds); // Ensure the map fits the image bounds
     
-       // Calculate 20% zoom level
-       const zoomRange = map.getMaxZoom() - map.getMinZoom();
-       const targetZoom = map.getMinZoom() + 0.2 * zoomRange;
+        // Calculate 20% zoom level
+        const zoomRange = map.getMaxZoom() - map.getMinZoom();
+        const targetZoom = map.getMinZoom() + 0.2 * zoomRange;
+
+        // Set the zoom level to 20%
+        map.setZoom(targetZoom);
+    }
+rgetZoom = map.getMinZoom() + 0.2 * zoomRange;
 
       // Set the zoom level to 20%
       map.setZoom(targetZoom);
