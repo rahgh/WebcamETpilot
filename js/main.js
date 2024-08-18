@@ -311,7 +311,7 @@ window.onload = function() {
             }
         })
         .catch(error => {
-            console.error('Error sending data to the web app:', error);
+            console.error ('Error sending data to the web app:', error);
         });
     }
 
